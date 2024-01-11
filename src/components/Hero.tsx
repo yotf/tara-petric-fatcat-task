@@ -1,6 +1,4 @@
-
-import React from "react";
-type HeroProps = {
+export type HeroProps = {
     title: string;
     image: string;
 };

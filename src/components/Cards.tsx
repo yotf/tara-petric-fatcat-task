@@ -1,7 +1,6 @@
 import clsx from 'clsx';
 
 import { Button } from './Button.js';
-import React from 'react';
 
 type Card = {
     title: string;
@@ -14,7 +13,7 @@ type Card = {
 
 type CardsProps = {
     cards: Card[];
-};  
+};
 
 export const Cards: React.FC<CardsProps> = ({ cards }) => {
     return (
