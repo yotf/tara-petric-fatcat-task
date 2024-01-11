@@ -5,7 +5,8 @@ const config = {
     root: true,
     env: {
         browser: true,
-        es2020: true
+        es2020: true,
+        node: true,
     },
     extends: [
         'eslint:recommended',
@@ -39,6 +40,7 @@ const config = {
     parserOptions: {
         ecmaVersion: "latest",
         sourceType: "module",
+        project: "./tsconfig.json",
         ecmaFeatures: {
             jsx: true
         }
@@ -68,7 +70,12 @@ const config = {
         'no-undef': 'error',
         'no-console': 'error',
         'no-unused-vars': 'error',
-        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-misused-promises": [2, {
+            "checksVoidReturn": {
+                "attributes": false
+            }
+        }],
+        '@typescript-eslint/no-explicit-any': 'off',
         'import/order': [
             'error',
             {
