@@ -18,7 +18,13 @@ const config = {
         'prettier',
     ],
     ignorePatterns: ['dist', '.eslintrc.cjs'],
-    settings: {react: {version: '18.2'}},
+    settings: {
+        react: { version: '18.2' }, 'import/resolver': {
+            typescript: {
+                "project": "./tsconfig.json"
+            }
+        }
+    },
     parser: '@typescript-eslint/parser',
     plugins: [
         'react-refresh',
@@ -62,6 +68,7 @@ const config = {
         'no-undef': 'error',
         'no-console': 'error',
         'no-unused-vars': 'error',
+        "@typescript-eslint/no-explicit-any": "off",
         'import/order': [
             'error',
             {
