@@ -1,6 +1,7 @@
 import { Hero } from '@homework-task/components/Hero';
 import { ItemsShowcase } from '@homework-task/components/ItemsShowcase';
 import ListUsers from '@homework-task/components/ListUsers';
+import PostForm from '@homework-task/components/PostForm';
 import { TrustBar } from '@homework-task/components/TrustBar';
 import { ComponentItem, LayoutSection } from '@homework-task/types';
 
@@ -16,6 +17,7 @@ const componentMapping: {
     componentItemsShowcase: ItemsShowcase,
     componentTrustBar: TrustBar,
     componentListUsers: ListUsers,
+    componentPostForm: PostForm,
     //componentFormGenerator:FormGenerator,
 };
 

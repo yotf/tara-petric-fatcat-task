@@ -20,3 +20,10 @@ export type LayoutSection = {
     props: LayoutProps;
     components: ComponentItem[];
 };
+
+export type PostFormData = {
+    // userId: number;
+    // id: number;
+    title: string;
+    body: string;
+};

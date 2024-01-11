@@ -4,7 +4,7 @@ import { LayoutSection } from './types';
 const layoutSpec: LayoutSection[] = [
     {
         type: 'layoutSection',
-        props: { className: 'bg-gray-100 bg-red' },
+        props: { className: ' bg-gray80 ' },
         components: [
             {
                 type: 'componentHero',
@@ -17,7 +17,7 @@ const layoutSpec: LayoutSection[] = [
     },
     {
         type: 'layoutSection',
-        props: { className: 'bg-gray-200 mt-10 flex flex-col gap-10 ' },
+        props: { className: 'bg-red pt-10 flex flex-col gap-10 ' },
         components: [
             {
                 type: 'componentItemsShowcase',
@@ -54,6 +54,16 @@ const layoutSpec: LayoutSection[] = [
                 },
             },
         ],
+    },
+    {
+        type: 'layoutSection',
+        props: { className: 'bg-gray80 pt-5' },
+        components: [{ type: 'componentListUsers', props: {} }],
+    },
+    {
+        type: 'layoutSection',
+        props: { className: 'pt-10 w-[70%] m-auto' },
+        components: [{ type: 'componentPostForm', props: {} }],
     },
 ];
 
