@@ -14,7 +14,10 @@ export const ItemsShowcase: React.FC<ItemsShowcaseProps> = ({ items }) => {
         <div className="flex justify-center items-center">
             <div className="grid grid-cols-2 gap-8 w-8/12">
                 {items.map(({ title, description }) => (
-                    <div key={title} className="flex flex-col gap-2">
+                    <div
+                        key={title}
+                        className="flex flex-col gap-2 bg-white rounded-lg shadow-md p-4"
+                    >
                         <img
                             src="/media/checkmark.jpg"
                             width={25}
